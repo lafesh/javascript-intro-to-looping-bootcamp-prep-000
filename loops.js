@@ -26,7 +26,6 @@ function doWhileLoop (array) {
 	function incrementVariable() {
 		i = i + 1;
 	}
-
 	do {
 		incrementVariable();
       //we just need to compare here
