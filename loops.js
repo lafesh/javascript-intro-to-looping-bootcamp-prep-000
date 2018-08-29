@@ -22,8 +22,16 @@ function whileLoop(array) {
 
 
 function doWhileLoop (array) {
-  do {
-    console.log("doo-bee-doo-bee-doo");
-  } while (array.length > 0 && doWhileLoop());
-   
+	var i = 0;
+	function incrementVariable() {
+		i = i + 1;
+	}
+
+	do {
+		incrementVariable();
+      //we just need to compare here
+	} while (array.length > 0 && i < 5);
+
+	return array;
+}
 }
